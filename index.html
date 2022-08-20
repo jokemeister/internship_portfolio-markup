@@ -26,7 +26,7 @@
             <nav class="header__nav">
                 <ul class="header__nav__list">
                     <li class="header__nav__item">
-                        <a href="#" class="header__nav__link">Home</a>
+                        <a href="#" class="header__nav__link is-active">Home</a>
                     </li>
                     <li class="header__nav__item">
                         <a href="#" class="header__nav__link">About</a>
@@ -56,7 +56,7 @@
 
         <section class="hero__about">
             <div class="container">
-                <h2 class="section-title">About</h2>
+                <h2 class="section-title hero__about-title">About</h2>
                 <p class="hero__about__text-top">
                     Lorem ipsum dolor sit amet, Arcu, sed nisi, mi, arcu libero phasellus tincidunt. Rhoncus, diam penatibus aliquet tellus, in rutrum augue. Pellentesque senectus risus consectetur et sed purus sed. Consectetur adipiscing elit. Egestas porttitor nulla nulla egestas odio pharetra egestas aliquet mollis. 
                 </p>
@@ -69,43 +69,46 @@
         <section class="hero__skills block-colored">
             <div class="hero__skills__content container">
                 <h2 class="section-title hero_skills__title">Skills</h2>
-                <img src="./assets/images/Profile Picture.png" alt="selfie">
-                <ul class="hero__skills__list">
-                    <li class="hero__skills__list__header-item ">
-                        <p class="hero__skills__list__title">Profile</p>
-                        <p class="hero__skills__list__text">UI/UX Engineer, Front-end Developer</p>                  
-                    </li>
-                    <li class="hero__skills__list__item">
-                        <div class="hero__skills__list__block-title">
-                            <p class="hero__skills__list__title">Front-end Dev</p>
-                            <div class="hero__skills__list__scale front-scale"></div>                         
-                        </div>
-                        <div class="hero__skills__list__block-desc">
-                            <p class="hero__skills__list__title">Tools</p>
-                            <p class="hero__skills__list__text">HTML, CSS, JS, Bootstrap, React</p>
-                        </div>
-                    </li>
-                    <li class="hero__skills__list__item">
-                        <div class="hero__skills__list__block-title">
-                            <p class="hero__skills__list__title">UI Design</p>
-                            <div class="hero__skills__list__scale ui-scale"></div>                         
-                        </div>
-                        <div class="hero__skills__list__block-desc">
-                            <p class="hero__skills__list__title">Tools</p>
-                            <p class="hero__skills__list__text">Adobe PS, AI, XD, Figma, InVision</p>
-                        </div>
-                    </li>
-                    <li class="hero__skills__list__item">
-                        <div class="hero__skills__list__block-title">
-                            <p class="hero__skills__list__title">UX Research</p>
-                            <div class="hero__skills__list__scale ux-scale"></div>                         
-                        </div>
-                        <div class="hero__skills__list__block-desc">
-                            <p class="hero__skills__list__title">Tools</p>
-                            <p class="hero__skills__list__text">Paper, Pen, Balsamiq</p>
-                        </div>
-                    </li>
-                </ul>
+                <div class="hero__skills__content-body">
+                    <img class="hero__skills__img" src="./assets/images/Profile Picture.png" alt="selfie">
+                    <ul class="hero__skills__list">
+                        <li class="hero__skills__list__header-item title-item">
+                            <p class="hero__skills__list__title">Profile</p>
+                            <p class="hero__skills__list__text">UI / UX Engineer, Front-end Developer</p>                  
+                        </li>
+                        <li class="hero__skills__list__item front-end-item">
+                            <div class="hero__skills__list__block-title">
+                                <p class="hero__skills__list__title">Front-end Dev</p>
+                                <div class="hero__skills__list__scale front-scale"></div>                         
+                            </div>
+                            <div class="hero__skills__list__block-desc">
+                                <p class="hero__skills__list__title">Tools</p>
+                                <p class="hero__skills__list__text">HTML, CSS, JS, Bootstrap, React</p>
+                            </div>
+                        </li>
+                        <li class="hero__skills__list__item ui-item">
+                            <div class="hero__skills__list__block-title">
+                                <p class="hero__skills__list__title">UI Design</p>
+                                <div class="hero__skills__list__scale ui-scale"></div>                         
+                            </div>
+                            <div class="hero__skills__list__block-desc">
+                                <p class="hero__skills__list__title">Tools</p>
+                                <p class="hero__skills__list__text">Adobe PS, AI, XD, Figma, InVision</p>
+                            </div>
+                        </li>
+                        <li class="hero__skills__list__item ux-item">
+                            <div class="hero__skills__list__block-title">
+                                <p class="hero__skills__list__title">UX Research</p>
+                                <div class="hero__skills__list__scale ux-scale"></div>                         
+                            </div>
+                            <div class="hero__skills__list__block-desc">
+                                <p class="hero__skills__list__title">Tools</p>
+                                <p class="hero__skills__list__text">Paper, Pen, Balsamiq</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
             </div>
 
         </section>
@@ -114,14 +117,28 @@
             <div class="container">
                 <h2 class="section-title hero__portfolio__title">Portfolio</h2>
                 <h3 class="hero__portfolio__subtitle">UX Research</h3>
-                <p class="hero__portfolio__text">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.
-                </p>
-                <div class="hero__portfolio__gallery">
-                    <img class="hero__portfolio__gallery-img hero__portfolio__gallery-leftTop" src="./assets/images/ux_img_1.png" alt="water_bridge">
-                    <img class="hero__portfolio__gallery-img hero__portfolio__gallery-leftBot" src="./assets/images/ux_img_2.png" alt="seaport">
-                    <img class="hero__portfolio__gallery-img hero__portfolio__gallery-rightTop" src="./assets/images/ux_img_3.png" alt="bridge">
-                    <img class="hero__portfolio__gallery-img hero__portfolio__gallery-rightBot" src="./assets/images/ux_img_4.png" alt="flats">
+                <div class="hero__portfolio__slider">
+                    <div class="hero__portfolio__btn-block">
+                        <button class="hero__portfolio__btn hero__portfolio__btn-prev">
+                            <svg class="svg" viewBox="0 0 14 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12.9102 23.9648L0.933594 12L12.9102 0.0351562L13.9648 1.08984L3.06641 12L13.9648 22.9102L12.9102 23.9648Z" fill="#333333"/>
+                            </svg>
+                        </button>
+                        <button class="hero__portfolio__btn hero__portfolio__btn-next">
+                            <svg class="svg" viewBox="0 0 14 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.0351562 22.9102L10.9336 12L0.0351562 1.08984L1.08984 0.0351562L13.0664 12L1.08984 23.9648L0.0351562 22.9102Z" fill="#333333"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <p class="hero__portfolio__text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac dictum nibh nam odio cursus id. Diam massa semper a tincidunt cursus ultricies lectus eget urna.
+                    </p>
+                    <div class="hero__portfolio__gallery">
+                        <img class="hero__portfolio__gallery-img hero__portfolio__gallery-leftTop" src="./assets/images/ux_img_1.png" alt="water_bridge">
+                        <img class="hero__portfolio__gallery-img hero__portfolio__gallery-leftBot" src="./assets/images/ux_img_2.png" alt="seaport">
+                        <img class="hero__portfolio__gallery-img hero__portfolio__gallery-rightTop" src="./assets/images/ux_img_3.png" alt="bridge">
+                        <img class="hero__portfolio__gallery-img hero__portfolio__gallery-rightBot" src="./assets/images/ux_img_4.png" alt="flats">
+                    </div>
                 </div>
             </div>
         </section>
@@ -129,22 +146,24 @@
     <footer class="footer block-colored">
         <div class="container">
             <h2 class="footer__title">Get in Touch</h2>
-            <ul class="footer__soc-list">
-                <li><a class="footer__link footer__soc-list__link" href="#">Dribbble</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">Behance</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">CodePen</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">GitHub</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">Medium</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">LinkedIn</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">Facebook</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">Instagram</a></li>
-                <li><a class="footer__link footer__soc-list__link" href="#">Twitter</a></li>
-            </ul>
-            <ul class="footer__contact-list">
-                <li><a class="footer__link footer__contact__link-mail" href="mailto:seyrig@mailme.com">seyrig@mailme.com</a></li>
-                <li><a class="footer__link footer__contact__link-tel" href="tel:+556645665544">+ 55 6645 665544</a></li>
-            </ul>
-            <svg class="footer__goTop" viewBox="0 0 24 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <div class="footer__content">
+                <ul class="footer__soc-list">
+                    <li><a class="footer__link footer__soc-list__link" href="#">Dribbble</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">Behance</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">CodePen</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">GitHub</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">Medium</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">LinkedIn</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">Facebook</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">Instagram</a></li>
+                    <li><a class="footer__link footer__soc-list__link" href="#">Twitter</a></li>
+                </ul>
+                <ul class="footer__contact-list">
+                    <li><a class="footer__link footer__contact__link-mail" href="mailto:seyrig@mailme.com">seyrig@mailme.com</a></li>
+                    <li><a class="footer__link footer__contact__link-tel" href="tel:+556645665544">+ 55 6645 665544</a></li>
+                </ul>
+            </div>
+            <svg class="footer__goTop svg" viewBox="0 0 24 14" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                 <path d="M22.9102 13.9648L12 3.06641L1.08984 13.9648L0.0351562 12.9102L12 0.933594L23.9648 12.9102L22.9102 13.9648Z" fill="#333333"/>
             </svg>
         </div>

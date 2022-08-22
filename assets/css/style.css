@@ -75,6 +75,7 @@
         display: flex;
         flex-wrap: nowrap;
         padding-top: 36px;
+        align-items: center;
     }
 
     .header__title {
@@ -204,9 +205,11 @@
 /* hero__skills */
 
     .hero__skills__img {
+        position: relative;
         display: block;
         max-width: 224px;
-        margin: 25px auto;
+        margin: 25px auto 26px;
+        transform: translateX(-5px);
     }
 
     .hero__skills__list {
@@ -214,7 +217,6 @@
     }
 
     .hero__skills__list__header-item {
-        margin-top: 26px;
         margin-bottom: 31px;
         display: flex;
         gap: 59px;
@@ -356,6 +358,7 @@
     }
 
     .footer__goTop {
+        cursor: pointer;
         position: fixed;
         bottom: 58px;
         right: 32px;
@@ -366,7 +369,97 @@
 } */
 /* /footer */
 
-@media screen  and (min-width: 1200px) {
+@media screen and (min-width: 576px) {
+    .container {
+        max-width: 532px;
+    }
+
+    .hero__skills__img {
+        max-width: 290px;
+    }
+
+    .hero__skills__list__header-item,
+    .hero__skills__list__item {
+        margin-left: 60px;
+        margin-right: 60px;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .hero__skills__list__block-desc {
+        gap: 172px;
+    }
+
+    .hero__portfolio__gallery {
+        max-height: 301px;
+    }
+
+    .hero__portfolio__gallery-leftTop,
+    .hero__portfolio__gallery-rightBot {
+        max-height: 106px;
+    }
+
+    .hero__portfolio__gallery-leftBot,
+    .hero__portfolio__gallery-rightTop {
+        max-height: 174px;
+    }
+
+    @media screen and (min-width: 768px) {
+        body {
+            font-size: 14px;
+            line-height: 1.667;
+        }
+
+        .hero__top__title {
+            font-size: 22px;
+        }
+
+        .hero__top__desc,
+        .hero__top__content__link {
+            font-size: 15px;
+        }
+        .container {
+            max-width: 709px;
+        }
+
+        .hero__skills__img {
+            max-width: 459px;
+        }
+
+        .hero__skills__list__header-item,
+        .hero__skills__list__item {
+            margin-left: 100px;
+            margin-right: 100px;
+        }
+
+        .hero__skills__list__scale {
+            width: 247px;
+        }
+    
+        .hero__skills__list__block-desc {
+            gap: 226px;
+        }
+
+        .hero__portfolio__gallery {
+            max-height: 401px;
+        }
+
+        .hero__portfolio__gallery-leftTop, 
+        .hero__portfolio__gallery-rightBot {
+            max-height: 141px;
+        }
+
+        .hero__portfolio__gallery-leftBot, 
+        .hero__portfolio__gallery-rightTop {
+            max-height: 232px;
+        }
+
+        .footer__soc-list {
+            max-height: 193px;
+        }
+    };
+}
+@media screen  and (min-width: 992px) {
     /* global */
         body {
             font-size: 18px;
@@ -376,11 +469,12 @@
             font-size: 1.5rem;
             text-align: left;
             font-weight: 700;
+            line-height: 1.212;
         }
 
         .container {
             width: 90vw;
-            max-width: 1108px;
+            max-width: 916px;
             margin: 0 auto;
         }
     /* /global */
@@ -397,6 +491,7 @@
 
         .header__content {
             justify-content: space-between;
+            line-height: 1.212;
         }
 
         .header__nav {
@@ -418,17 +513,18 @@
     /* /header */
 
     /* hero */
-        .hero__about,
-        .hero__skills,
+        .hero__about, 
+        .hero__skills, 
         .hero__portfolio {
-            padding: 93px 0 145px 0;
+            padding: 73px 0 125px 0; 
         }
 
         /* hero__top */
 
             .hero__top {
                 max-height: 768px;
-                padding: 267px 0 50px;
+                padding: 267px 0 0;
+                background-position: center;
             }
             
             .hero__top::before {
@@ -437,10 +533,12 @@
 
             .hero__top__content {
                 text-align: left;
+                line-height: 1.212;
             }
 
             .hero__top__title {
                 font-size: 64px;
+
             }
 
             .hero__top__desc {
@@ -462,11 +560,6 @@
 
             .hero__about-title {
                 margin-bottom: 76px;
-            }
-
-            .hero__about__text-top,
-            .hero__about__text-bot {
-                line-height: 1.667;
             }
 
             .hero__about__text-top {
@@ -492,10 +585,17 @@
                 line-height: 1.389;
             }
 
+            .hero__skills__list__header-item, 
+            .hero__skills__list__item {
+                margin-left: 0;
+                margin-right: 0;
+            }
+            
             .hero__skills__list__header-item {
                 gap: 133px;
                 margin-top: 0;
                 margin-bottom: 65px;
+                justify-content: flex-start;
             }
             
             .hero__skills__list__item:not(:last-child) {
@@ -535,9 +635,9 @@
             .hero__skills__list__block-desc {
                 gap: 143px;
             }
-            
+
             .hero__skills__list__scale {
-                width: 446px;
+                width: 317px;
             }
 
         /* /hero__skills */
@@ -559,7 +659,7 @@
                 flex-direction: row;
                 flex-wrap: nowrap;
                 justify-content: space-between;
-                gap: 125px;
+                gap: 55px;
             }
 
             .hero__portfolio__text {
@@ -571,20 +671,20 @@
             .hero__portfolio__gallery {
                 position: relative;
                 top: -6px;
-                max-height: 403px;
-                row-gap: 26px;
-                column-gap: 30px;
+                max-height: 295px;
+                row-gap: 20px;
+                column-gap: 24px;
                 width: 100%;
             }
 
             .hero__portfolio__gallery-leftTop,
             .hero__portfolio__gallery-rightBot {
-                max-height: 144px;
+                max-height: 102px;
             }
         
             .hero__portfolio__gallery-leftBot,
             .hero__portfolio__gallery-rightTop {
-                max-height: 237px;
+                max-height: 168px;
             }
 
             .hero__portfolio__btn-block {
@@ -599,6 +699,7 @@
                 outline: none;
                 background: none;
                 border: none;
+                cursor: pointer;
             }
 
         /* /hero__portfolio */
@@ -629,7 +730,7 @@
         }
 
         .footer__soc-list {
-            max-height: 190px;
+            max-height: 210px;
             max-width: 466px;
             row-gap: 14px;
             column-gap: 302px;
@@ -657,6 +758,41 @@
     /* /footer */
 }
 
-@media screen and (min-width:768px) {
-        
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1108px;
+    }
+
+    .hero__about {
+        padding: 93px 0 135px 0;
+    }
+
+    .hero__skills,
+    .hero__portfolio {
+        padding: 93px 0 145px 0;
+    }
+
+    .hero__skills__list__scale {
+        width: 446px;
+    }
+
+    .hero__portfolio__slider {
+        gap: 125px;
+    }
+
+    .hero__portfolio__gallery {
+        max-height: 403px;
+        row-gap: 26px;
+        column-gap: 30px;
+    }
+
+    .hero__portfolio__gallery-leftTop,
+    .hero__portfolio__gallery-rightBot {
+        max-height: 144px;
+    }
+
+    .hero__portfolio__gallery-leftBot,
+    .hero__portfolio__gallery-rightTop {
+        max-height: 237px;
+    }
 }
